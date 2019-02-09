@@ -1,5 +1,6 @@
 require_relative('../models/city')
 require_relative('../models/country')
+require('pry-byebug')
 
 country_1 = Country.new({'name' => 'england'})
 country_2 = Country.new({'name' => 'france'})
@@ -34,3 +35,15 @@ city_1.save
 city_2.save
 city_3.save
 city_4.save
+
+# city_1 = City.new({
+#   'name' => 'sheffield',
+#   'visited' => true,
+#   'country_id' => country_1.id })
+# city_1.update()
+
+# country_1 = Country.new({'name' => 'Engerland'})
+# country_1.update()
+
+binding.pry
+nil

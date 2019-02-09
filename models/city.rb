@@ -58,6 +58,11 @@ class City
     return city
   end
 
+  def country()
+    country = Country.find(@country_id)
+    return country
+  end
+
   def format_name
     return "#{@name.capitalize}"
   end
