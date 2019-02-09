@@ -12,4 +12,18 @@ class City
     @country_id = options['country_id'].to_i
   end
 
+  def save()
+      sql = "INSERT INTO cities (
+        name,
+        visited,
+        country_id )
+      VALUES
+      ( $1, $2, $3 )
+      RETURNING id"
+      values = [@name, @visited, @country_id]
+      result = SqlRunner.run(sql, values)
+      id = result.first['id']
+      @id = id
+    end
+
 end
