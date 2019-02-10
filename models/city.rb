@@ -38,7 +38,7 @@ class City
     SqlRunner.run(sql, values)
   end
 
-  def self.map_items(country_data)
+  def self.map_items(city_data)
     return city_data.map { |city| City.new(city) }
   end
 

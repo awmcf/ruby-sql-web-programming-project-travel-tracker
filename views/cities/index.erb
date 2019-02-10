@@ -1,0 +1,12 @@
+<h2>Cities</h2>
+
+<div id="city-wrapper">
+  <% @cities.each do |city| %>
+  <div class="city">
+    <h3><a href="/cities/<%= city.id %>"><%= city.format_name %></a></h3>
+    <p>Visited: <%= city.visited %></p>
+    <p>Country: <%= city.country.name.capitalize %></p>
+  </div>
+
+  <% end %>
+</div>
