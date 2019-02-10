@@ -1,0 +1,11 @@
+<h2>Countries</h2>
+
+<div id="country-wrapper">
+  <% @countries.each do |country| %>
+
+  <div class="country">
+    <h3> <% country.id %> <%= country.name.capitalize %> </h3>
+  </div>
+
+  <% end %>
+</div>
