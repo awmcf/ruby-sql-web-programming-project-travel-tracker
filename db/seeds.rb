@@ -29,12 +29,19 @@ city_4 = City.new({
   'name' => 'seoul',
   'visited' => false,
   'country_id' => country_4.id })
+city_5 = City.new({
+  'name' => 'manchester',
+  'visited' => false,
+  'country_id' => country_1.id })
 
 
 city_1.save
 city_2.save
 city_3.save
 city_4.save
+city_5.save
+
+country_1.cities
 
 # city_1 = City.new({
 #   'name' => 'sheffield',

@@ -55,4 +55,11 @@ class Country
     return "#{@name.capitalize}"
   end
 
+  def cities()
+    sql = "SELECT * FROM cities WHERE country_id = $1"
+    values = [@id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |city| City.new(city) }
+  end
+
 end
