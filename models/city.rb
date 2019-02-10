@@ -63,8 +63,4 @@ class City
     return country
   end
 
-  def format_name
-    return "#{@name.capitalize}"
-  end
-
 end

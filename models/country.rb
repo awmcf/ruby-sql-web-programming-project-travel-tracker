@@ -51,10 +51,6 @@ class Country
     return country
   end
 
-  def format_name
-    return "#{@name.capitalize}"
-  end
-
   def cities()
     sql = "SELECT * FROM cities WHERE country_id = $1"
     values = [@id]
