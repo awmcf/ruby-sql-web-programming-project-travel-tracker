@@ -47,7 +47,7 @@ class Country
     WHERE id = $1"
     values = [id]
     result = SqlRunner.run(sql, values).first
-    country = City.new(result)
+    country = Country.new(result)
     return country
   end
 

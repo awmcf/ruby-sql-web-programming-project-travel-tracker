@@ -62,7 +62,7 @@ get '/countries/:id' do
 end
 
 get '/countries/:id/edit' do
-  @countries = Country.all
+  @country = Country.find(params['id'])
   erb(:"countries/edit")
 end
 

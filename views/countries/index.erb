@@ -4,7 +4,7 @@
   <% @countries.each do |country| %>
 
   <div class="country">
-    <h3> <% country.id %> <%= country.name.capitalize %> </h3>
+    <h3><a href="/countries/<%= country.id %>"><%= country.name.capitalize %></a></h3>
   </div>
 
   <% end %>

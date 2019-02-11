@@ -41,7 +41,6 @@ city_3.save
 city_4.save
 city_5.save
 
-country_1.cities
 
 # city_1 = City.new({
 #   'name' => 'sheffield',
