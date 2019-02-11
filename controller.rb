@@ -56,6 +56,17 @@ post '/countries' do
   redirect to '/countries'
 end
 
+get '/countries/:id/delete-warning' do
+  @country = Country.find(params['id'])
+  erb(:"countries/delete-warning")
+end
+
+post '/countries/:id/delete' do
+  @country = Country.find(params['id'])
+  @country.delete
+  redirect to '/countries'
+end
+
 get '/countries/:id' do
   @country = Country.find(params['id'])
   erb(:"countries/show")
@@ -70,10 +81,4 @@ post '/countries/:id' do
   country = Country.new(params)
   country.update
   redirect to "/countries/#{params['id']}"
-end
-
-post '/countries/:id/delete' do
-  country = Country.find(params['id'])
-  country.delete
-  redirect to '/countries'
 end
