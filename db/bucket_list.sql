@@ -10,5 +10,6 @@ CREATE TABLE cities (
   id SERIAL8 primary key,
   name VARCHAR(255),
   visited VARCHAR(255),
+  rating VARCHAR(255),
   country_id INT8 REFERENCES countries(id) ON DELETE CASCADE
 );

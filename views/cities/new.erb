@@ -10,8 +10,9 @@
     <div class="form-el">
       <label for="country_select">Select Country:</label>
       <select name="country_id" id="country_select">
+        <option disabled selected value> -- Please Select --</option>
         <% @country.each do |country| %>
-            <option value=<%= country.id %>><%= country.name %></option>
+            <option value=<%= country.id %>><%= country.name.capitalize %></option>
         <% end %>
       </select>
     </div>
@@ -19,8 +20,23 @@
     <div class="form-el">
       <label for="visited_select">Visited?</label>
       <select name="visited" id="visited_select">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
+        <option disabled selected value> -- Please Select --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+      </select>
+    </div>
+
+    <div class="form-el">
+      <label for="rating_select">Rating</label>
+      <select name="rating" id="rating_select">
+        <option disabled selected value> -- Please Select --</option>
+            <option value="Not visited yet">Not visited yet</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+
       </select>
     </div>
 
