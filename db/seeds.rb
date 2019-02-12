@@ -15,23 +15,23 @@ country_4.save()
 
 city_1 = City.new({
   'name' => 'london',
-  'visited' => true,
+  'visited' => 'yes',
   'country_id' => country_1.id })
 city_2 = City.new({
   'name' => 'paris',
-  'visited' => true,
+  'visited' => 'yes',
   'country_id' => country_2.id })
 city_3 = City.new({
   'name' => 'berlin',
-  'visited' => true,
+  'visited' => 'yes',
   'country_id' => country_3.id })
 city_4 = City.new({
   'name' => 'seoul',
-  'visited' => false,
+  'visited' => 'no',
   'country_id' => country_4.id })
 city_5 = City.new({
   'name' => 'manchester',
-  'visited' => false,
+  'visited' => 'no',
   'country_id' => country_1.id })
 
 

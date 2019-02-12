@@ -9,6 +9,6 @@ CREATE TABLE countries (
 CREATE TABLE cities (
   id SERIAL8 primary key,
   name VARCHAR(255),
-  visited BOOLEAN,
+  visited VARCHAR(255),
   country_id INT8 REFERENCES countries(id) ON DELETE CASCADE
 );
