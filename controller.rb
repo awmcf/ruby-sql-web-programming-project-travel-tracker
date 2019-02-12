@@ -8,6 +8,16 @@ get '/' do
   erb(:"homepage")
 end
 
+get '/visited' do
+  @cities = City.all
+  erb(:"visited")
+end
+
+get '/desired' do
+  @cities = City.all
+  erb(:"desired")
+end
+
 get '/cities' do
   @cities = City.all
   erb(:"cities/index")

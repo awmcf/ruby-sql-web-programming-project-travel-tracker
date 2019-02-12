@@ -1,7 +1,7 @@
-<h2>Cities</h2>
+<h2>Places I Want to Go</h2>
 
 <div id="city-wrapper">
-  <% @cities.each do |city| %>
+  <% @cities.each do |city| if city.visited == "No" %>
 
   <div class="city">
     <h3><a href="/cities/<%= city.id %>"><%= city.name.capitalize%></a></h3>
@@ -11,9 +11,7 @@
   </div>
 
   <% end %>
+
+
+  <% end %>
 </div>
-
-<p>Planning your next trip?</p>
-
-<a href="https://www.skyscanner.net/" target="_blank">Flights</a>
-<a href="https://www.airbnb.co.uk/" target="_blank">Places to Stay</a>
