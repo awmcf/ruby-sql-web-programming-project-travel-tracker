@@ -31,12 +31,12 @@ city_3 = City.new({
 city_4 = City.new({
   'name' => 'seoul',
   'visited' => 'No',
-  'rating' => 'N/A',
+  'rating' => 'Not visited yet',
   'country_id' => country_4.id })
 city_5 = City.new({
   'name' => 'manchester',
   'visited' => 'No',
-  'rating' => 'N/A',
+  'rating' => 'Not visited yet',
   'country_id' => country_1.id })
 
 

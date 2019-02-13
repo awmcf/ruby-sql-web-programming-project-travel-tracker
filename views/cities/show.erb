@@ -8,5 +8,5 @@
 <a href="/cities/<%= @city.id %>/edit ">Edit</a>
 <form action="/cities/<%= @city.id %>/delete" method="POST"><input type="submit" value="Delete"></form>
 
-<a href="https://www.airbnb.co.uk/s/<%= @city.name.capitalize %>/homes"><%= @city.name.capitalize %> Homes</a>
-<a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM&lang=en-gb&sid=ce6ea8ded6541b1dbb2a70e25fb33859&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM%3Bsid%3Dce6ea8ded6541b1dbb2a70e25fb33859%3Bsb_price_type%3Dtotal%26%3B&ss=<%= @city.name.capitalize %>"> <%= @city.name.capitalize %> Hotels</a>
+<a href="https://www.airbnb.co.uk/s/<%= @city.name.capitalize %>/homes" target="_blank"><%= @city.name.capitalize %> Airbnb's</a>
+<a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM&lang=en-gb&sid=ce6ea8ded6541b1dbb2a70e25fb33859&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM%3Bsid%3Dce6ea8ded6541b1dbb2a70e25fb33859%3Bsb_price_type%3Dtotal%26%3B&ss=<%= @city.name.capitalize %>" target="_blank"> <%= @city.name.capitalize %> Hotels</a>
