@@ -1,12 +1,36 @@
-<h2><%= @city.name.capitalize %></h2>
+<h1><%= @city.name.capitalize %></h1>
+
+<div class="city_attributes">
 
 <p>Country: <%= @city.country.name.capitalize %></p>
 <p>Visited: <%= @city.visited %></p>
 <p>Rating: <%= @city.rating %></p>
 
+</div>
+
+<div class="edit_delete">
 
 <a href="/cities/<%= @city.id %>/edit ">Edit</a>
 <form action="/cities/<%= @city.id %>/delete" method="POST"><input type="submit" value="Delete"></form>
 
-<a href="https://www.airbnb.co.uk/s/<%= @city.name.capitalize %>/homes" target="_blank"><%= @city.name.capitalize %> Airbnb's</a>
-<a href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM&lang=en-gb&sid=ce6ea8ded6541b1dbb2a70e25fb33859&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM%3Bsid%3Dce6ea8ded6541b1dbb2a70e25fb33859%3Bsb_price_type%3Dtotal%26%3B&ss=<%= @city.name.capitalize %>" target="_blank"> <%= @city.name.capitalize %> Hotels</a>
+</div>
+<br>
+<br>
+
+<div>
+
+<img id= "airbnb_logo" src="https://www.dgtlnk.com/wp-content/uploads/airbnb_logo_detail.jpg" alt="Airbnb Logo">
+<img id= "booking_logo"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrhHA-6w8DxJ1D91zvxrtFF-q550rsTzaWu_z1lVVpIWIugUTi" alt="Booking Logo">
+ <br>
+ <br>
+ <br>
+ <br>
+</div>
+
+<div class="stay_links">
+
+
+<a id="airbnb_link" href="https://www.airbnb.co.uk/s/<%= @city.name.capitalize %>/homes" target="_blank"><%= @city.name.capitalize %> Airbnb's</a>
+<a id="booking_link" href="https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM&lang=en-gb&sid=ce6ea8ded6541b1dbb2a70e25fb33859&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4AQfIAQzYAQHoAQH4AQuIAgGoAgM%3Bsid%3Dce6ea8ded6541b1dbb2a70e25fb33859%3Bsb_price_type%3Dtotal%26%3B&ss=<%= @city.name.capitalize %>" target="_blank"> <%= @city.name.capitalize %> Hotels</a>
+
+</div>
